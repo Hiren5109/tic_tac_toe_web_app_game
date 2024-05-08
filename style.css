@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;    
+    scroll-behavior: smooth;
+}
+html,body{
+    height: 100%;
+    max-height: 80vh;
+    width: 100%;
+}
+body{
+    background-color: rgb(224, 250, 246);
+    text-align: center;
+}
+#player-turn{
+    text-align: center;
+    color: rgb(0, 148, 198);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.container{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 50vmin;
+    display: flex;
+    background-color: rgb(187, 207, 224);
+    border: 3px solid rgb(0, 148, 198);
+    border-radius: 20px;
+    box-shadow: 9px 9px 25px 0px slategrey;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+.box{
+    height: 13vmin;
+    width: 13vmin;
+    border-radius: 2rem;
+    box-shadow: 9px 9px 25px 0px slategrey;
+    border: none;
+    font-size: 8vmin;
+    background-color: rgb(0, 148, 198);
+    color: #fff;
+    transition: 0.3 all ease;
+}
+#reset-btn{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight:bold;
+    background-color: rgb(0, 148, 198);
+    color: #fff;
+    border: none;
+    border-radius: 3rem;
+}
+#msg{
+    color: rgb(0, 148, 198);
+    font-size: 8vmin;
+    font-weight: bold;
+}
+.msg-container{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.hide{
+    display: none;
+}
+@media screen and (min-width:320px) and (max-width:834px){
+.box{
+        height: 13vmin;
+        width: 13vmin;
+        border-radius: 2rem;
+        box-shadow: 9px 9px 25px 0px slategrey;
+        border: none;
+        font-size: 8vmin;
+        background-color: darkcyan;
+        color: #fff;
+        transition: 0.3 all ease;
+}   
+#reset-btn{
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight:bold;
+    background-color: darkcyan;
+    color: #fff;
+    border: none;
+    border-radius: 3rem;
+}
+#new-btn{
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight:bold;
+    background-color: darkcyan;
+    color: #fff;
+    border: none;
+    border-radius: 3rem;
+}
+#msg{
+    margin: 10px 0;
+    color:rgb(0, 148, 198);
+    font-size: 5vmin;
+    font-weight: bold;
+}
+.msg-container{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.hide{
+    display: none;
+}   
+}
